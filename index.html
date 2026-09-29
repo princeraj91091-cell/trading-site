@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रोफेशनल ट्रेडिंग प्लेटफॉर्म</title>
+    <style>
+        body {
+            background-color: #0b0e14;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #151a26;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #262e40;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00b0ff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #151a26, #1b2234);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #262e40;
+            margin-bottom: 30px;
+        }
+        h1 { color: #00b0ff; margin-bottom: 15px; }
+        .edit-box {
+            background-color: #151a26;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px dashed #4f5d75;
+            margin-top: 20px;
+        }
+        .btn-action {
+            background-color: #00b0ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input {
+            width:100%; padding: 12px; margin-bottom: 15px; 
+            background:#0b0e14; color:white; border:1px solid #262e40; border-radius:4px;
+            box-sizing: border-box;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #4f5d75;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🎯 SmartTrader Pro</div>
+        <div><span style="color: #00e676;">● लाइव मार्केट ऑन</span></div>
+    </header>
+
+    <div class="container">
+        <!-- मुख्य हीरो सेक्शन -->
+        <div class="hero-section">
+            <h1 id="mainTitle">मेरी प्रोफेशनल ट्रेडिंग वेबसाइट</h1>
+            <p id="mainDesc">यहाँ आपको डेलीै मार्केट एनालिसिस, चार्ट्स और ट्रेडिंग की बेस्ट गाइडलाइंस मिलेंगी।</p>
+            <button class="btn-action" onclick="alert('ट्रेडिंग सिग्नल्स जल्द आ रहे हैं!')">लाइव सिग्नल्स देखें</button>
+            
+            <!-- TradingView लाइव चार्ट की शुरुआत -->
+            <div style="height:450px; margin-top:25px; border-radius:12px; overflow:hidden; border: 1px solid #262e40;">
+                <iframe src="https://tradingview.com" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <!-- TradingView लाइव चार्ट का अंत -->
+        </div>
+
+        <!-- एडमिन एडिटर पैनल -->
+        <div class="edit-box">
+            <h3 style="color: #ff9100; margin-top: 0;">🛠️ क्विक एडमिन एडिटर पैनल (बिना कोड छुए बदलें)</h3>
+            <p style="font-size: 14px; color: #b0bec5;">आप नीचे दिए गए बॉक्स में जो भी लिखेंगे, वो ऊपर की मुख्य वेबसाइट पर तुरंत बदल जाएगा:</p>
+            
+            <label style="display:block; margin-bottom: 5px;">वेबसाइट की मुख्य हेडिंग बदलें:</label>
+            <input type="text" id="headingInput" value="मेरी प्रोफेशनल ट्रेडिंग वेबसाइट">
+            
+            <button class="btn-action" style="background-color: #ff9100;" id="updateBtn">वेबसाइट अपडेट करें</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 SmartTrader Pro | ऑल राइट्स रिजर्व्ड।
+    </footer>
+
+    <script>
+        document.getElementById('updateBtn').addEventListener('click', function() {
+            const newHeading = document.getElementById('headingInput').value;
+            document.getElementById('mainTitle').innerText = newHeading;
+            alert('वेबसाइट का डेटा सफलतापूर्वक अपडेट कर दिया गया है!');
+        });
+    </script>
+
+</body>
+</html>
 
